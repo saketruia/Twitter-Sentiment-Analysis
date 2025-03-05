@@ -44,7 +44,7 @@ def predict_sentiment(text, model, vectorizer, stop_words):
 @st.cache_resource
 def initialize_scraper():
     scraper = Nitter(log_level=1)
-    scraper.working_instances = ["https://nitter.net", "https://nitter.42l.fr", "https://nitter.space", "https://twiiit.com"]  # Add more instances if needed
+    scraper.working_instances = ["https://nitter.net", "https://nitter.42l.fr", "https://nitter.space"]  # Add more working nitter links instances if needed
     return scraper
 
 # Function to create a colored card
